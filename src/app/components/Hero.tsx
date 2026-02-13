@@ -147,11 +147,12 @@ export function Hero() {
               >
                 <motion.img
                   src="/images/electrical/electrical_1.png"
-                  alt="Electrician at work"
+                  alt="Professional electrician performing electrical installation work - MASHOBANE Electrical Services"
                   className="w-full h-full object-contain bg-gray-100"
                   initial={{ scale: 1.05 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 1 }}
+                  loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 

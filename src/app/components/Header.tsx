@@ -6,11 +6,12 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200">
-      <nav className="max-w-7xl mx-auto px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200" role="banner">
+      <nav className="max-w-7xl mx-auto px-6 py-4" role="navigation" aria-label="Main navigation">
         <div className="flex items-center justify-between">
           <motion.a
-            href="#"
+            href="/"
+            aria-label="MASHOBANE Electrical Services Home"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -18,8 +19,10 @@ export function Header() {
           >
             <img 
               src="/images/logo_2.png" 
-              alt="MASHOBANE Logo" 
+              alt="MASHOBANE Electrical Services - Professional Electricians in South Africa" 
               className="h-12 w-auto object-contain"
+              width="120"
+              height="48"
             />
           </motion.a>
 
@@ -93,7 +96,7 @@ export function Header() {
               <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors">
                 Contact Us
               </a>
-              <button className="px-6 py-2.5 bg-[#5e50f9] text-white font-semibold rounded-full">
+              <button className="px-6 py-2.5 bg-orange-500 text-white font-semibold rounded-full">
                 + Get a Free Quote
               </button>
             </motion.div>

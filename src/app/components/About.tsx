@@ -94,10 +94,11 @@ export function About() {
             >
               <motion.img
                 src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1080&h=720&fit=crop"
-                alt="MASHOBANE team"
+                alt="MASHOBANE Electrical Services team - Certified electricians providing professional electrical services"
                 className="w-full h-full object-contain"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5 }}
+                loading="lazy"
               />
             </motion.div>
           </motion.div>
@@ -128,10 +129,11 @@ export function About() {
               >
                 <motion.img
                   src={image}
-                  alt={`Work ${index + 1}`}
+                  alt={`Electrical work project ${index + 1} by MASHOBANE Electrical Services - Professional electrical installation`}
                   className="w-full h-64 object-contain"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.5 }}
+                  loading="lazy"
                 />
               </motion.div>
             ))}

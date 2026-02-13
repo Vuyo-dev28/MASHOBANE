@@ -131,10 +131,11 @@ export function Services() {
                 <div className="relative h-48 overflow-hidden bg-gray-100">
                   <motion.img
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} service by MASHOBANE Electrical Services - Professional electricians`}
                     className="w-full h-full object-contain"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.5 }}
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   <div className="absolute top-4 left-4">
